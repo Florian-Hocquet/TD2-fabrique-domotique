@@ -10,24 +10,24 @@ public class ConnectableFactory {
             switch (connectableCreer) {
                 case "Radio":
                     Connectable radio = new Radio("radio");
-                    Connectable.equiper(gagdetAjouter);
+                    radio.equiper(gagdetAjouter);
                     AppliDomotique.objets.add(radio);
                     break;
 
                 case "Cafetiere":
                     Connectable cafetiere = new Cafetiere("cafetiere");
-                    Connectable.equiper(gagdetAjouter);
+                    cafetiere.equiper(gagdetAjouter);
                     AppliDomotique.objets.add(cafetiere);
                     break;
 
                 case "Radiateur":
                     Connectable radiateur = new Radiateur("radiateur");
-                    Connectable.equiper(gagdetAjouter);
+                    radiateur.equiper(gagdetAjouter);
                     AppliDomotique.objets.add(radiateur);
                     break;
 
                     default:
-                        System.out.println("C est pas bon");
+                        System.out.println("C\'est pas bon");
             }
         }
 

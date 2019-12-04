@@ -1,12 +1,22 @@
 package fr.univamu.iut.exo2;
 
-public class Radiateur extends Connectable {
+class Radiateur implements Connectable {
+
+    String nom;
 
     public Radiateur(String nom) {
         this.nom = nom;
     }
 
-    public static void equiper(String gadget) {
+    public String getNom() {
+        return this.nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public  void equiper(String gadget) {
         System.out.println("On équipe la radiateur de" + gadget);
     }
 }

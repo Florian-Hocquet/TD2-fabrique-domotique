@@ -1,12 +1,22 @@
 package fr.univamu.iut.exo2;
 
-public class Cafetiere extends Connectable {
+class Cafetiere implements Connectable {
+
+    String nom;
 
     public Cafetiere(String nom) {
         this.nom = nom;
     }
 
-    public static void equiper(String gadget) {
+    public String getNom() {
+        return this.nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public  void equiper(String gadget) {
         System.out.println("On équipe la cafetière de" + gadget);
     }
 }
